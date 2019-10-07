@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DDTusing_DataProvider.java&apos; to &apos;Selenium/src/test/java&apos;&#x0D;&#x0A;- Original project: &apos;K&apos;&#x0D;&#x0A;- Destination element: &apos;Selenium/src/test/java&apos;&#x0D;&#x0A;- Original element: &apos;TEST.DDTusing_DataProvider.java&apos;" description="Copy compilation unit" destination="=Selenium/src\/test\/java" element1="/src&lt;TEST{DDTusing_DataProvider.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1566377303855" units="1" version="1.0"/>
+</session>

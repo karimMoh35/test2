@@ -1,0 +1,17 @@
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
+
+public class TestNGDemo {
+
+	
+	@ BeforeTest
+	public  void OpenUrl() {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\New folder\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("http://www.google.com");
+		
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+package Tests;
+
+import org.testng.annotations.Test;
+
+import Pages.HomePage;
+
+public class UserOpen_ApplePAGE extends TestBase
+{
+	
+	HomePage HomeObject;
+	
+	@Test (priority=1)
+	public void UserSuccessfullySelectApple ()
+	{
+		HomeObject = new HomePage(driver);
+		HomeObject.UserSelect_ApplePhones();
+		HomeObject.testTakesScreenshot();
+		
+	}
+
+}

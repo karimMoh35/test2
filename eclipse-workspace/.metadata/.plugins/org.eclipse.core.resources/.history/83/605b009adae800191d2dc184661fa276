@@ -1,0 +1,122 @@
+package Pages;
+
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+import javax.naming.spi.DirStateFactory.Result;
+import javax.naming.spi.ResolveResult;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Rectangle;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.Augmenter;
+import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
+
+public class HomePage extends PageBase {
+
+	
+	public HomePage(WebDriver driver) {
+		super(driver);
+	}
+	
+       @ FindBy(xpath="//*[@id=\"header-nav\"]/div/div/div[1]/a/div/span")
+       WebElement All_Categories ;
+       
+       @ FindBy(xpath="//*[@id=\"header-nav\"]/div/div/div[2]/a/div/span")
+       WebElement ShopByBrand ;
+       
+       @ FindBy(xpath="//*[@id=\"header-nav\"]/div/div/a[1]/div/span")
+       WebElement Online_Execlusives;
+       
+       @ FindBy(xpath="//*[@id=\"header-nav\"]/div/div/a[2]/div/span")
+       WebElement Weekly_Offers ;
+       
+       @ FindBy(xpath="//*[@id=\"header-nav\"]/div/div/a[3]/div/span")
+       WebElement NewArrivals ;
+         
+       @ FindBy(xpath="//*[@id=\"header-nav\"]/div/div/a[4]/div/span")
+       WebElement RenewedProducts ;
+       
+       @ FindBy(xpath="//*[@id=\"all-categories\"]/div/ul/li[9]/a/div[2]")
+       WebElement SmartPhones;
+       
+       @ FindBy(xpath="//*[@id=\"all-brands\"]/div/div/ul/li[5]/a/div")
+       WebElement ApplePHONES;
+       
+       @ FindBy(xpath="//*[@id=\"header\"]/div[1]/div/ul/li[7]/a/div[2]")
+       WebElement lANGUAGE;
+       
+       @ FindBy(xpath="//*[@id=\"top\"]/body/div[3]/div/div[1]/div/div/div[2]/div/div[2]/div[1]/a/div/span")
+       WebElement AppleSelections;
+       
+       @ FindBy(xpath="//*[@id=\"top\"]/body/div[3]/div[1]/div/div/div/div[2]/div/div[2]/div[1]/a/div/span")
+       WebElement iphone11;
+       
+       @ FindBy(xpath="//*[@id=\"header\"]/div[4]/div/div/div/div[3]")
+       WebElement iphone11Tap;
+       
+       @ FindBy(xpath="   //*[@id=\"header\"]/div[4]/div/div/div/div[3]")
+       WebElement iphone11Taps;
+       
+       @FindBy(id="product-collection-image-266147")
+       WebElement firstIphone11;          
+    
+       @FindBy(xpath = "//*[@id=\"product-price-266147\"]/div[1]")
+       WebElement Pricecheck ;
+       
+  
+	public void UserSelect_ApplePhones() throws IOException
+	{
+		lANGUAGE.click();
+		All_Categories.click();
+		SmartPhones.click();
+		ShopByBrand.click();
+		ApplePHONES.click();
+		AppleSelections.click();
+		iphone11.click();
+		iphone11Tap.click();
+		firstIphone11.click();
+		String PriceFoRIPHONE= Pricecheck.getText();
+		System.out.println(PriceFoRIPHONE);
+		Assert.assertTrue(PriceFoRIPHONE.contains("3699"));
+		
+	
+	}
+
+	
+        public void testTakesScreenshot() throws IOException 
+        {
+        	//TakesScreenshot ts = (TakesScreenshot)driver;
+             
+        	File Source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        	FileUtils.copyFile(Source, new File("/newtestwithJenkins/Screenshot"));
+		
+        	
+        	
+        	
+        }
+}
+	/*	
+
+	Actions hover = new Actions(driver);
+
+	WebElement Elem_to_hover = driver.findElementBy(By.id("id"));
+
+	hover.moveToElement(Elem_to_hover);
+
+	hover.build();
+
+	hover.perform();
+	
+	
+	}
+	*/

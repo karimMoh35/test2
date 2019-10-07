@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="nopcommerce regression test">
+<parameter name ="browser" value ="chrome"></parameter>     // to say if the browser chrome open chrome so you must add aparameter called browser and it's value is chrome and also firefox or any browser
+  <test name="Regression Test">
+    <classes>
+      <class name="tests.UserRegistrationPage"/>   // the name of the class that you want to run 
+    </classes>
+  </test> 
+</suite> 

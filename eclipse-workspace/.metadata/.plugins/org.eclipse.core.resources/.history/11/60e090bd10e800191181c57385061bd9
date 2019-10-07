@@ -1,0 +1,18 @@
+package Tests;
+
+import Pages.HomePage;
+
+public class UserOpen_ApplePAGE extends TestBase
+{
+	
+	HomePage HomeObject;
+	
+	
+	public void UserSuccessfullySelectApple ()
+	{
+		HomeObject = new HomePage(driver);
+		HomeObject.UserSelect_ApplePhones();
+		
+	}
+
+}

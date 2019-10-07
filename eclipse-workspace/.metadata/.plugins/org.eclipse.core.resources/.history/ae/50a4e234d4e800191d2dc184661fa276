@@ -1,0 +1,25 @@
+package Tests;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import Pages.HomePage;
+
+public class UserOpen_ApplePAGE extends TestBase
+{
+	
+	HomePage HomeObject;
+	
+	@Test (priority=1)
+	public void UserSuccessfullySelectApple () throws IOException
+	{
+		HomeObject = new HomePage(driver);
+		HomeObject.UserSelect_ApplePhones();
+	//	HomeObject.testTakesScreenshot();
+		
+		
+	}
+
+}
+

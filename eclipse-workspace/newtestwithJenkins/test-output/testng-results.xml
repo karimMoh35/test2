@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-10-07T08:15:54Z" name="Default suite" finished-at="2019-10-07T08:16:59Z" duration-ms="64947">
+    <groups>
+    </groups>
+    <test started-at="2019-10-07T08:15:54Z" name="Default test" finished-at="2019-10-07T08:16:59Z" duration-ms="64947">
+      <class name="Tests.UserOpen_ApplePAGE">
+        <test-method is-config="true" signature="StartDriver(java.lang.String)[pri:0, instance:Tests.UserOpen_ApplePAGE@4cf4d528]" started-at="2019-10-07T11:15:31Z" name="StartDriver" finished-at="2019-10-07T11:15:54Z" duration-ms="23028" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartDriver -->
+        <test-method signature="UserSuccessfullySelectApple()[pri:0, instance:Tests.UserOpen_ApplePAGE@4cf4d528]" started-at="2019-10-07T11:15:54Z" name="UserSuccessfullySelectApple" finished-at="2019-10-07T11:16:59Z" duration-ms="64932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserSuccessfullySelectApple -->
+      </class> <!-- Tests.UserOpen_ApplePAGE -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

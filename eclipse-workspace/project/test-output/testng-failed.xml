@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [nopcommerce regression test]">
+  <parameter name="browser" value="chrome"/>
+  <test name="Regression Test(failed)">
+    <classes>
+      <class name="tests.UserRegistrationPage">
+        <methods>
+          <include name="UserCanRegisterSuccessfully"/>
+          <include name="StopDriver"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- tests.UserRegistrationPage -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [nopcommerce regression test] -->

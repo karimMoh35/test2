@@ -1,0 +1,53 @@
+package Pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class HomePage extends PageBase {
+
+	
+	public HomePage(WebDriver driver) {
+		super(driver);
+	}
+	
+       @ FindBy(xpath="//*[@id=\"header-nav\"]/div/div/div[1]/a/div/span")
+       WebElement All_Categories ;
+       
+       @ FindBy(xpath="//*[@id=\"header-nav\"]/div/div/div[2]/a/div/span")
+       WebElement ShopByBrand ;
+       
+       @ FindBy(xpath="//*[@id=\"header-nav\"]/div/div/a[1]/div/span")
+       WebElement Online_Execlusives;
+       
+       @ FindBy(xpath="//*[@id=\"header-nav\"]/div/div/a[2]/div/span")
+       WebElement Weekly_Offers ;
+       
+       @ FindBy(xpath="//*[@id=\"header-nav\"]/div/div/a[3]/div/span")
+       WebElement NewArrivals ;
+         
+       @ FindBy(xpath="//*[@id=\"header-nav\"]/div/div/a[4]/div/span")
+       WebElement RenewedProducts ;
+       
+       @ FindBy(xpath="//*[@id=\"all-categories\"]/div/ul/li[9]/a/div[2]")
+       WebElement SmartPhones;
+       
+       @ FindBy(xpath="//*[@id=\"all-categories\"]/div/ul/li[9]/div/div[1]/ul/li[3]/a/div")
+       WebElement ApplePHONES;
+       
+       @ FindBy(xpath="//*[@id=\"header\"]/div[1]/div/ul/li[7]/a/div[2]")
+       WebElement lANGUAGE;
+       
+       
+
+     //*[@id="header"]/div[1]/div/ul/li[7]/a/div[2]
+	public void UserSelect_ApplePhones()
+	{
+		lANGUAGE.click();
+		All_Categories.click();
+		// SmartPhones.click();
+		ApplePHONES.click();
+	}
+	
+	
+}
